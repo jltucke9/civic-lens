@@ -36,7 +36,7 @@
       <label for="menu-toggle" class="menu-button">Menu</label>
       <ul class="menu">
         <li><a href="#breaking-news">Breaking News</a></li>
-        <li><a href="#featured-aticles">Featured Articles</a></li>
+        <li><a href="#featured-articles">Featured Articles</a></li>
         <li><a href="#alerts">Alerts</a></li>
         <li><a href="#social">Social</a></li>
       </ul>
@@ -50,113 +50,119 @@
       </section>
       <section id="breaking-news">
         <h2>Breaking News</h2>
-        <article>
-          <h3>Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
-          <p>The Department of Justice has announced a full investigation into decades of water distribution practices affecting tribal lands and rural communities.</p>
-          <video controls src="videos/water-management.mp4">Investigation of water management practices affecting tribal lands and rural communities.</video>
-        </article>
-        <article>
-          <h3>Voter Suppression Bill Faces Pushback in State Supreme Court</h3>
-          <p>Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of color and those in rural areas of the country.</p>
-          <video controls src="videos/voter-suppression.mp4">Voters push back in State Supreme Court in belief that their voting rights are not being honored.</video>
-        </article> 
+        <section>
+          <article class="article1">
+            <h3>Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
+            <p>The Department of Justice has announced a full investigation into decades of water distribution practices affecting tribal lands and rural communities.</p>
+            <video controls src="videos/water-management.mp4">Investigation of water management practices affecting tribal lands and rural communities.</video>
+          </article>
+          <article class="article2">
+            <h3>Voter Suppression Bill Faces Pushback in State Supreme Court</h3>
+            <p>Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of color and those in rural areas of the country.</p>
+            <video controls src="videos/voter-suppression.mp4">Voters push back in State Supreme Court in belief that their voting rights are not being honored.</video>
+          </article> 
+        </section>
       </section>
       <section id="featured-articles">
        <h2>Featured Articles</h2>
-       <section>
+       <article>
           <h3>The Cost of Silence: Whistleblower Stories from Inside Tech Giants</h3>
           <p>Former employees speak out about ethical breaches in data privacy and surveillance.</p>
-        </section>
-        <section>
-          <h3> Justice: How Bail Systems Harm the Poor</h3>
+        </article>
+        <article>
+          <h3>Unequal Justice: How Bail Systems Harm the Poor</h3>
           <p>An investigative series on cash bail and its disproportionate impact.</p>
-        </section>
-        <section>
+        </article>
+        <article>
         <h3>Invisible Work: The Lives of Migrant Caregivers</h3>
         <p>Humanizing the labor that keeps households and economies afloat.</p>
-        </section>
-        <section>
+        </article>
+        <article>
           <h3>Redlined Still: A New Map of Modern-Day Housing Discrimination</h3>
           <p>Data visualization showing systemic inequality in real estate today.</p>
-        </section>
-        <section>
+        </article>
+        <article>
           <h3>Climate Injustice: Who Pays for Pollution?</h3>
           <p>Communities of color bear the brunt of environmental damage.</p>
-        </section>
-        <section>
+        </article>
+        <article>
           <h3>Teaching Under Fire: The Fight for Inclusive Education</h3>
           <p>Teachers navigate book bans, curriculum restrictions, and culture wars.</p>
-        </section>
-        <section>
+        </article>
+        <article>
           <h3>Food Deserts and Corporate Abandonment</h3>
           <p>Why access to nutrition is a zip code lottery.</p>
-        </section>
-        <section>
+        </article>
+        <article>
           <h3>Policing Mental Health: A Broken Response System</h3>
           <p>Examining police interactions with those in crisis.</p>
-        </section>
-        <section>
+        </article>
+        <article>
           <h3>The Disinformation Economy</h3>
           <p>Tracing profit motives behind fake news empires.</p>
-        </section>
-        <section>
+        </article>
+        <article>
           <h3>Facing the Algorithm: AI and Racial Bias</h3>
           <p>The coded inequalities that shape our lives.</p>
-        </section>
-        <section>
+        </article>
+        <article>
           <h3>The Voting Maze</h3>
-          <p> guide to understanding your rights amid changing laws.</p>
-        </section>
-        <section>
+          <p>A guide to understanding your rights amid changing laws.</p>
+        </article>
+        <article>
           <h3>After the Cameras Leave: Long-Term Crisis Recovery</h3>
           <p>Rebuilding trust and infrastructure in disaster-hit communities.</p>
-        </section>
+        </article>
       </section>
       <section>
       <h2>Stay Informed. Stay Empowered.</h2>
-        <p> text messages with the news you want to know.</p>
+        <p>Receive text messages with the news you want to know.</p>
         <form action="http://wp.zybooks.com/form-viewer.php" method="post">
-          <div>
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" aria-required="true">
-          </div>
-          <div>
-            <label for="phone">Mobile</label>
-            <input type="tel" name="phone" id="phone" aria-required="true">
-          </div>
-          <fieldset id="notification-preferences">
-            <legend>Notification Preferences</legend>
-            <div>
-              <input type="radio" id="news" name="notification-preferences" value="news" aria-required="true" checked>
-              <label for="news">Breaking News</label>
+          <section>
+            <div class="form-row">
+              <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" aria-required="true">
+              </div>
+              <div>
+                <label for="phone">Mobile</label>
+                <input type="tel" name="phone" id="phone" aria-required="true">
+              </div>
             </div>
-            <div>
-              <input type="radio" id="politics" name="notification-preferences" value="politics" aria-required="true">
-              <label for="politics">Politics</label>
-            </div>
-            <div>
-              <input type="radio" id="weather" name="notification-preferences" value="weather" aria-required="true">
-              <label for="weather">Weather</label>
-            </div>
-            <div>
-              <input type="radio" id="sports" name="notification-preferences" value="sports" aria-required="true">
-              <label for="sports">Sports</label>
-            </div>
-            <div>
-              <input type="radio" id="entertainment" name="notification-preferences" value="entertainment" aria-required="true">
-              <label for="entertainment">Entertainment</label>
-            </div>
-            <div>
-              <input type="radio" id="world" name="notification-preferences" value="world" aria-required="true">
-              <label for="world">World</label>
-            </div>
-            <div>
-              <input type="radio" id="finacial" name="notification-preferences" value="financial" aria-required="true">
-              <label for="finacial">Financial</label>
-            </div>
-          </fieldset>
-          <input type="submit" name="submit" id="submit" value="Subscribe">
-        </form>
+            <fieldset id="notification-preferences">
+              <legend>Notification Preferences</legend>
+              <div>
+                <input type="checkbox" id="news" name="notification-preferences" value="news" required checked>
+                <label for="news">Breaking News</label>
+              </div>
+              <div>
+                <input type="checkbox" id="politics" name="notification-preferences" value="politics">
+                <label for="politics">Politics</label>
+              </div>
+              <div>
+                <input type="checkbox" id="weather" name="notification-preferences" value="weather">
+                <label for="weather">Weather</label>
+              </div>
+              <div>
+                <input type="checkbox" id="sports" name="notification-preferences" value="sports">
+                <label for="sports">Sports</label>
+              </div>
+              <div>
+                <input type="checkbox" id="entertainment" name="notification-preferences" value="entertainment">
+                <label for="entertainment">Entertainment</label>
+              </div>
+              <div>
+                <input type="checkbox" id="world" name="notification-preferences" value="world">
+                <label for="world">World</label>
+              </div>
+              <div>
+                <input type="checkbox" id="finacial" name="notification-preferences" value="financial">
+                <label for="finacial">Financial</label>
+              </div>
+            </fieldset>
+            <input type="submit" name="submit" id="submit" value="Subscribe">
+          </form>
+        </section>
         </section>
       </main>
       <footer>
@@ -168,7 +174,7 @@
         <a href="https://tiktok.com/" aria-label="TikTok">TikTok</a>
         <a href="https://linkedin.com/" aria-label="LinkedIn">LinkedIn</a>  
         
-        <small>&copy; 2025 Civic Lens. All rights reserved.</small>
+        <p><small>&copy; 2025 Civic Lens. All rights reserved.</small></p>
         
     <script>
       const toggleButton = document.getElementById('theme-toggle');
