@@ -240,16 +240,12 @@ form {
   margin: 10px;
 }
 
-form section {
-  padding-top: 10px;
-}
-
 form div {
   display: flex;
   flex-direction: column;
   margin-bottom: 5px;
   font-weight: bolder;
-  max-width: 95%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -267,6 +263,7 @@ form input[type="text"], form input[type="tel"] {
   padding: 14px;
   border-radius: 3px;
   border: 1px solid var(--blue-bulletin);
+  width: 100%
 }
 
 #notification-preferences {
@@ -457,7 +454,7 @@ blockquote {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    max-width: 95%;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -530,7 +527,7 @@ blockquote {
   }
 
   footer a {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 }
 
