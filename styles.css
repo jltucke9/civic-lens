@@ -185,6 +185,7 @@ main {
   transition: transform 0.3s ease;
   border: 1px solid var(--truth-text);
   color: var(--watchdog-white);
+  cursor: pointer;
 }
 
 #breaking-news article h3::after {
@@ -209,6 +210,7 @@ video {
   box-shadow: var(--shadow);
   border: 1px solid var(--story-subtitle);
   margin: 10px 5px;
+  cursor: pointer;
 }
 
 #featured-articles article h3 {
@@ -236,16 +238,16 @@ form {
   background-color: var(--news-flash);
   box-shadow: var(--shadow);
   border: 1px solid var(--truth-text);
-  padding: 10px;
-  margin: 10px;
+  padding: 15px;
+  cursor: pointer;
 }
 
-form div {
+form #form-content {
   display: flex;
   flex-direction: column;
   margin-bottom: 5px;
-  font-weight: bolder;
-  width: 95%;
+  font-weight:lighter;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -256,19 +258,18 @@ form div {
 
 form label {
   color: var(--watchdog-white);
-  font-weight: lighter;
 }
 
 form input[type="text"], form input[type="tel"] {
   padding: 14px;
   border-radius: 3px;
   border: 1px solid var(--blue-bulletin);
-  width: 100%
+  width: 100%;
 }
 
 #notification-preferences {
   border: 1px solid var(--blue-bulletin);
-  margin: 15px;
+  margin-top: 10px;
 }
 
 #notification-preferences legend {
@@ -295,7 +296,7 @@ input[type="checkbox"] {
   cursor: pointer;
   font-weight: lighter;
   border-radius: 2px;
-  border: 1px solid var(--blue-bulletin);
+  border: 1px solid gray;
 }
 
 input[type="checkbox"]:checked {
@@ -316,13 +317,14 @@ input[type="checkbox"]:checked::after {
   background-color: var(--blue-bulletin);
   color: var(--watchdog-white);
   border-radius: 1px;
+  margin-top: 10px;
   padding: 14px;
-  width: 95%;
+  width: 100%;
   display: block;
-  margin: 10px;
   text-transform: uppercase;
   font-weight: bolder;
   box-shadow: var(--shadow);
+  cursor: pointer;
 }
 
 #submit:hover {
@@ -349,6 +351,7 @@ footer a {
   text-transform: uppercase;
   margin: 8px 10px 8px 0;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 footer a:hover {
@@ -472,6 +475,7 @@ blockquote {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2px;
+    margin-bottom: 10px;
   }
   
   #notification-preferences legend {
@@ -487,8 +491,9 @@ blockquote {
     height: 20px;
   }
 
-  #submit {
-    width: 97%;
+  input[type="checkbox"]:checked::after { 
+    font-size: 20px;
+    line-height: .9;
   }
 
   footer p {
@@ -496,7 +501,6 @@ blockquote {
   }
 
 }
-
 
 
 /* ///ADD/// large styles 920px */
