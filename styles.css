@@ -419,7 +419,7 @@ blockquote {
     gap: 15px;
   }
 
-  #breaking-news section {
+  #breaking-news div {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }

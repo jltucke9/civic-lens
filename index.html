@@ -50,7 +50,7 @@
       </section>
       <section id="breaking-news">
         <h2>Breaking News</h2>
-        <section>
+        <div>
           <article class="article1">
             <h3>Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
             <p>The Department of Justice has announced a full investigation into decades of water distribution practices affecting tribal lands and rural communities.</p>
@@ -61,7 +61,7 @@
             <p>Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of color and those in rural areas of the country.</p>
             <video controls src="videos/voter-suppression.mp4">Voters push back in State Supreme Court in belief that their voting rights are not being honored.</video>
           </article> 
-        </section>
+        </div>
       </section>
       <section id="featured-articles">
        <h2>Featured Articles</h2>
@@ -118,7 +118,7 @@
       <h2>Stay Informed. Stay Empowered.</h2>
         <p>Receive text messages with the news you want to know.</p>
         <form action="http://wp.zybooks.com/form-viewer.php" method="post">
-          <section>
+          <div>
             <div class="form-row">
               <div>
                 <label for="name">Name</label>
@@ -161,27 +161,26 @@
               </div>
             </fieldset>
             <input type="submit" name="submit" id="submit" value="Subscribe">
-          </form>
-        </section>
-        </section>
-      </main>
-      <footer>
-        <h2>Follow Us</h2>
-      
-        <a href="https://x.com/" aria-label="Twitter">Twitter/X</a>
-        <a href="https://instagram.com/" aria-label="Instagram">Instagram</a> 
-        <a href="https://youtube.com/" aria-label="YouTube">YouTube</a>
-        <a href="https://tiktok.com/" aria-label="TikTok">TikTok</a>
-        <a href="https://linkedin.com/" aria-label="LinkedIn">LinkedIn</a>  
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <h2>Follow Us</h2>
+      <a href="https://x.com/" aria-label="Twitter">Twitter/X</a>
+      <a href="https://instagram.com/" aria-label="Instagram">Instagram</a> 
+      <a href="https://youtube.com/" aria-label="YouTube">YouTube</a>
+      <a href="https://tiktok.com/" aria-label="TikTok">TikTok</a>
+      <a href="https://linkedin.com/" aria-label="LinkedIn">LinkedIn</a>  
         
-        <p><small>&copy; 2025 Civic Lens. All rights reserved.</small></p>
-        
-    <script>
-      const toggleButton = document.getElementById('theme-toggle');
+      <p><small>&copy; 2025 Civic Lens. All rights reserved.</small></p>
+  
+  <script>
+    const toggleButton = document.getElementById('theme-toggle');
     
       toggleButton.addEventListener('click', () => {
         const body = document.body;
-    
+        
         // Toggle manually between light and dark mode
         if (body.classList.contains('dark-mode')) {
           body.classList.remove('dark-mode');
@@ -195,7 +194,7 @@
           body.classList.add(prefersDark ? 'light-mode' : 'dark-mode');
         }
       });
-    </script>
-  </footer>  
-</body>
+      </script>
+      </footer>
+    </body>
 </html>
